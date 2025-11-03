@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Park: The Heart of Cabagan</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font and custom colors --><script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Georgia', 'serif'],
+                    },
+                    colors: {
+                        'forest-green': '#38761D',  /* Header, Main Accent */
+                        'dark-olive': '#4A6A53',    /* Secondary/Highlight Color (Borders, Footer) */
+                        'soft-khaki': '#F0E68C',    /* Khaki Background */
+                        'accent-yellow': '#F39C12', /* Gold/Accent Color */
+                        'text-dark': '#2C3E50',     /* Dark text color for contrast */
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for aesthetic enhancements */
+        .park-shadow {
+            /* Updated to use forest-green */
+            box-shadow: 0 10px 15px -3px rgba(56, 118, 29, 0.3), 0 4px 6px -2px rgba(56, 118, 29, 0.1);
+        }
+        .text-glow {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        .info-card {
+            /* Updated to use dark-olive */
+            border-left: 5px solid theme('colors.dark-olive');
+        }
+    </style>
+</head>
+<body class="bg-soft-khaki font-sans text-text-dark leading-relaxed">
+
+    <!-- Header Section --><header class="bg-forest-green py-12 text-center shadow-lg">
+        <div class="container mx-auto px-4">
+            <h1 class="text-5xl md:text-7xl font-serif font-bold text-white text-glow rounded-lg">
+                Square Park: The Heart of Cabagan
+            </h1>
+            <p class="text-xl md:text-2xl mt-3 text-soft-khaki font-light">
+                Cabagan, Isabela
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content Container --><main class="container mx-auto px-4 py-12 max-w-4xl">
+
+        <!-- Introduction --><section class="mb-12 border-l-4 border-dark-olive pl-4 rounded-lg">
+            <p class="text-xl italic text-text-dark/90">
+                Located at the center of <strong class="text-forest-green">Cabagan, Isabela</strong>, Cabagan Square Park is the town’s main public plaza—a lively community hub that blends leisure, culture, and local pride. Surrounded by trees and open spaces, it’s a favorite spot for relaxation, gatherings, and celebrations.
+            </p>
+        </section>
+
+        <!-- Image 1: Overview of the park --><div class="mb-12">
+            <img src="images/cabagan_park_overview.webp" alt="Overview of Cabagan Square Park with playground and carousel" class="w-full h-auto rounded-lg shadow-lg park-shadow">
+            <p class="text-center text-sm text-gray-600 mt-2">A vibrant day at Cabagan Square Park, featuring its playground and classic carousel.</p>
+        </div>
+
+        <!-- Location Section --><section class="mb-12 p-6 bg-white rounded-xl shadow-lg info-card">
+            <h2 class="text-3xl font-bold mb-4 text-forest-green">
+                Location & Accessibility
+            </h2>
+            <p>
+                Situated in <strong class="text-forest-green">Barangay Centro</strong>, the park is easily accessible to both locals and visitors exploring the charm of Cabagan. It serves as the geographical and social center of the municipality.
+            </p>
+        </section>
+
+        <!-- Main Attractions Section --><section class="mb-12">
+            <h2 class="text-3xl font-bold mb-4 border-b-2 border-forest-green pb-2 text-forest-green">
+                Main Attractions & Activities
+            </h2>
+            <div class="space-y-4">
+                <div class="p-4 bg-white rounded-lg shadow hover:shadow-md transition duration-300">
+                    <strong class="text-dark-olive">Beautiful Landscaping:</strong> Green gardens, shaded walkways, and refreshing open areas provide a perfect urban escape.
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow hover:shadow-md transition duration-300">
+                    <strong class="text-dark-olive">Cultural Monuments:</strong> Explore statues and landmarks showcasing Cabagan’s rich heritage and local heroes.
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow hover:shadow-md transition duration-300">
+                    <strong class="text-dark-olive">Community Events:</strong> The venue for festivals, concerts, and the famous <strong class="text-forest-green">Pancit Cabagan Festival</strong>. Check the local calendar to catch a celebration!
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow hover:shadow-md transition duration-300">
+                    <strong class="text-dark-olive">Relaxation Areas:</strong> Find comfortable benches, grab a bite from the food stalls, and enjoy open spots perfect for resting or socializing.
+                </div>
+            </div>
+        </section>
+
+        <!-- Image 2: Pancit Cabagan Festival --><div class="mb-12">
+            <img src="images/pancit_festival.webp" alt="Crowd gathered around giant Pancit Cabagan during a festival" class="w-full h-auto rounded-lg shadow-lg park-shadow">
+            <p class="text-center text-sm text-gray-600 mt-2">The famous Pancit Cabagan Festival, a vibrant community celebration.</p>
+        </div>
+
+        <!-- Image 3 & 4: I Love Cabagan Sign (Day and Night) --><div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div>
+                <img src="images/i_love_cabagan_day.webp" alt="I Love Cabagan sign during the day" class="w-full h-auto rounded-lg shadow-lg park-shadow">
+                <p class="text-center text-sm text-gray-600 mt-2">The iconic "I Love Cabagan" sign, beautifully lit during the day.</p>
+            </div>
+            <div>
+                <img src="images/i_love_cabagan_night.webp" alt="I Love Cabagan sign at night with carousel lights" class="w-full h-auto rounded-lg shadow-lg park-shadow">
+                <p class="text-center text-sm text-gray-600 mt-2">The "I Love Cabagan" sign glowing at night with the carousel in the background.</p>
+            </div>
+        </div>
+
+        <!-- Facilities & Nearby Spots Section --><section class="mb-12">
+            <h2 class="text-3xl font-bold mb-4 border-b-2 border-forest-green pb-2 text-forest-green">
+                Facilities & Local Flavor
+            </h2>
+            <p class="mb-6">
+                Surrounded by local eateries and cafés, many serving authentic <strong class="text-forest-green">Pancit Cabagan</strong>, the park offers convenient access to restaurants, shaded seating, and family-friendly spaces. Hotels and homestays nearby provide comfortable stays for travelers who want to explore Cabagan further.
+            </p>
+        </section>
+
+
+        <!-- Best Time to Visit Section --><section class="mb-12 p-6 bg-forest-green/10 rounded-lg info-card">
+            <h2 class="text-3xl font-bold mb-4 text-forest-green">
+                Best Time to Visit
+            </h2>
+            <p class="mb-4">
+                Visit during <strong class="text-dark-olive">late afternoon or evening</strong> for a cozy atmosphere with park lights and activity.
+            </p>
+            <ul class="list-disc list-inside space-y-2 ml-4">
+                <li><strong class="text-accent-yellow">December:</strong> Night Market season offers fun stalls and local goods.</li>
+                <li><strong class="text-accent-yellow">January:</strong> Don't miss the <strong class="text-forest-green">Pancit Cabagan Festival</strong>, the town’s most colorful and exciting celebration!</li>
+            </ul>
+        </section>
+
+        <!-- Essence Section --><section>
+            <p class="mt-8 text-xl font-serif italic text-center text-forest-green">
+                <strong>Essence:</strong> Cabagan Square Park is more than a plaza — it’s the <strong class="text-dark-olive">heart of Cabagan</strong>, where culture, community, and local life come together. A symbol of unity and warmth, it’s a must-visit spot to experience the true spirit of Isabela.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer --><footer class="bg-dark-olive text-white text-center py-6 mt-12">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Tourist Spot Blog. All rights reserved. | Experience Cabagan, Isabela.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
